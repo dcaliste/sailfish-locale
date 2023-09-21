@@ -3,8 +3,8 @@ Name:       sailfish-locale
 Summary:    Locale definitions
 Version:    0
 Release:    1
-URL:        https://bitbucket.org/jolla/base-sailfish-locale
-License:    Proprietary
+URL:        https://github.com/sailfishos/sailfish-locale
+License:    BSD
 Source0:    %{name}-%{version}.tar.bz2
 Provides:   locale
 Conflicts:  jolla-settings-system <= 1.1.65
@@ -31,5 +31,6 @@ find language/ -type f -name '*.conf' \
 
 %files
 %defattr(-,root,root,-)
+%license LICENSE.BSD
 %{_datadir}/jolla-supported-languages/
 %{_prefix}/lib/locale/locale-archive
